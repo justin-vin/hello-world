@@ -10,22 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #f5f5f0;
-      --text: #1a1a1a;
-      --muted: #888;
-      --accent: #2d5a27;
-      --scanline-opacity: 0.02;
+      --bg: #0a0a0a;
+      --text: #e8e8e8;
+      --muted: #555;
+      --accent: #c8ff00;
       --font: 'JetBrains Mono', 'SF Mono', monospace;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0a0a0a;
-        --text: #e8e8e8;
-        --muted: #555;
-        --accent: #c8ff00;
-        --scanline-opacity: 0.03;
-      }
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -125,8 +114,8 @@
         0deg,
         transparent,
         transparent 2px,
-        rgba(0,0,0,var(--scanline-opacity)) 2px,
-        rgba(0,0,0,var(--scanline-opacity)) 4px
+        rgba(0,0,0,0.03) 2px,
+        rgba(0,0,0,0.03) 4px
       );
       pointer-events: none;
       z-index: 10;
